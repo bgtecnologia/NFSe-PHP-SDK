@@ -60,6 +60,6 @@ class Impostos implements OptionalObjectParameter
      */
     public function hasRequiredValues() : bool
     {
-        return isset($this->iss) || isset($this->pis) || isset($this->cofins) || isset($this->inss) || isset($this->ir) || isset($this->csll) || isset($this->descricaoImpostos);
+        return isset($this->iss) || isset($this->pis) || isset($this->cofins) || isset($this->inss) || isset($this->ir) || isset($this->csll) || isset($this->descricaoImpostos) || isset($this->ibs_cbs);
     }
 }
