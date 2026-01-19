@@ -147,7 +147,6 @@ class Issue implements APIOperation
         }
         if (isset($Servico->codigoServico)) {
             $rps->servico->codigo_servico = $Servico->codigoServico;
-            $rps->servico->cod_indicador_operacao = $Servico->codigoServico;
         }
         if (isset($Servico->codigoCnae)) {
             $rps->servico->codigo_cnae = $Servico->codigoCnae;
