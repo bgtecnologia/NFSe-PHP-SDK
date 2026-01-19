@@ -58,4 +58,30 @@ trait Servico
      * @var string
      */
     public int $tributacaoIss;
+      
+    /**
+     * Finalidade
+     * 0 - Normal
+     * 1 - Nota substituta
+     * 2 - Nota complementar
+     * @provider Abrasf
+     * @var string
+     */
+    public int $finalidade;
+      
+    /**
+     * Consumidor final
+     * 0 - Não
+     * 1 - Sim
+     * @provider Abrasf
+     * @var string
+     */
+    public int $consumidorFinal;
+      
+    /**
+     * Novo código de Serviço
+     * @provider Abrasf
+     * @var string
+     */
+    public string $codIndicadorOperacao;
 }

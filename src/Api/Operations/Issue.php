@@ -147,6 +147,7 @@ class Issue implements APIOperation
         }
         if (isset($Servico->codigoServico)) {
             $rps->servico->codigo_servico = $Servico->codigoServico;
+            $rps->servico->cod_indicador_operacao = $Servico->codigoServico;
         }
         if (isset($Servico->codigoCnae)) {
             $rps->servico->codigo_cnae = $Servico->codigoCnae;
@@ -168,6 +169,15 @@ class Issue implements APIOperation
         }
         if (isset($Servico->tributacaoIss)) {
             $rps->servico->tributacao_iss = $Servico->tributacaoIss;
+        }
+        if (isset($Servico->finalidade)) {
+            $rps->servico->finalidade = $Servico->finalidade;
+        }
+        if (isset($Servico->consumidorFinal)) {
+            $rps->servico->consumidor_final = $Servico->consumidorFinal;
+        }
+        if (isset($Servico->codIndicadorOperacao)) {
+            $rps->servico->cod_indicador_operacao = $Servico->codIndicadorOperacao;
         }
         if (isset($Servico->localPrestacao)) {
             $rps->servico->local_prestacao = $Servico->localPrestacao;
