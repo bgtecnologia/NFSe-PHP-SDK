@@ -273,6 +273,9 @@ class Issue implements APIOperation
         if (isset($Impostos->csll)) {
             $servico->impostos->csll = $Impostos->csll;
         }
+        if (isset($Impostos->ibs_cbs)) {
+            $servico->impostos->ibs_cbs = $Impostos->ibs_cbs;
+        }
         if (isset($Impostos->descricaoImpostos)) {
             $servico->impostos->descricao_impostos = $Impostos->descricaoImpostos;
         }

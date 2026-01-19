@@ -50,6 +50,12 @@ class Impostos implements OptionalObjectParameter
     public string $csll;
 
     /**
+     * IBS CBS
+     * @var string
+     */
+    public array $ibs_cbs;
+
+    /**
      * {@inheritDoc}
      */
     public function hasRequiredValues() : bool
