@@ -48,4 +48,14 @@ trait Servico
      * @var string
      */
     public string $codigoNbs;
+      
+    /**
+     * Tributação do ISS
+     * 1 - Operação Tributável
+     * 2 - Imunidade
+     * 4 - Não Incidência
+     * @provider Abrasf
+     * @var string
+     */
+    public int $tributacaoIss;
 }
