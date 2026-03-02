@@ -91,6 +91,12 @@ class Servico
     public Intermediario $Intermediario;
 
     /**
+     * Modelo do data competencia do serviço.
+     * @var string
+     */
+    public string $dataCompetencia;
+
+    /**
      * Inicialização dos modelos.
      */
     public function __construct()
