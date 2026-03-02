@@ -97,6 +97,12 @@ class Servico
     public string $dataCompetencia;
 
     /**
+     * Informações complementares para a nota fiscal.
+     * @var string
+     */
+    public string $informacoesComplementares;
+
+    /**
      * Inicialização dos modelos.
      */
     public function __construct()
