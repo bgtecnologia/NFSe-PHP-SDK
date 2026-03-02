@@ -56,10 +56,16 @@ class Impostos implements OptionalObjectParameter
     public array $ibs_cbs;
 
     /**
+     * CP
+     * @var string
+     */
+    public array $cp;
+
+    /**
      * {@inheritDoc}
      */
     public function hasRequiredValues() : bool
     {
-        return isset($this->iss) || isset($this->pis) || isset($this->cofins) || isset($this->inss) || isset($this->ir) || isset($this->csll) || isset($this->descricaoImpostos) || isset($this->ibs_cbs);
+        return isset($this->iss) || isset($this->pis) || isset($this->cofins) || isset($this->inss) || isset($this->ir) || isset($this->csll) || isset($this->descricaoImpostos) || isset($this->ibs_cbs) || isset($this->cp);
     }
 }

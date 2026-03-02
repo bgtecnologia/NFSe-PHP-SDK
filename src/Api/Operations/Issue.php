@@ -248,6 +248,9 @@ class Issue implements APIOperation
         if (isset($Servico->tributacao)) {
             $rps->servico->tributacao = $Servico->tributacao;
         }
+        if (isset($Servico->informacoesComplementares)) {
+            $rps->servico->informacoes_complementares = $Servico->informacoesComplementares;
+        }
     }
 
     /**
@@ -275,6 +278,9 @@ class Issue implements APIOperation
         }
         if (isset($Impostos->csll)) {
             $servico->impostos->csll = $Impostos->csll;
+        }
+        if (isset($Impostos->cp)) {
+            $servico->impostos->cp = $Impostos->cp;
         }
         if (isset($Impostos->ibs_cbs)) {
             $servico->impostos->ibs_cbs = $Impostos->ibs_cbs;
