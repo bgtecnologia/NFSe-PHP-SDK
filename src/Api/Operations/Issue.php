@@ -220,6 +220,9 @@ class Issue implements APIOperation
         if (isset($Servico->ufLocalPrestacao)) {
             $rps->servico->uf_local_prestacao = $Servico->ufLocalPrestacao;
         }
+        if (isset($Servico->dataCompetencia)) {
+            $rps->servico->data_competencia = $Servico->dataCompetencia;
+        }
         if (sizeof($Servico->notasDeducao) > 0) {
             $rps->servico->notas_deducao = [];
             foreach ($Servico->notasDeducao as $notaDeducao) {
