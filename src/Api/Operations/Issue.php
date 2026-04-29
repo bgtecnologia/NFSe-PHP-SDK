@@ -67,6 +67,14 @@ class Issue implements APIOperation
     }
 
     /**
+     * Prepara o JSON sem enviar à API. Permite inspecionar o payload via getContentToSend().
+     */
+    public function prepareJSON()
+    {
+        $this->makeJSON();
+    }
+
+    /**
      * Cria o JSON de emissão.
      */
     protected function makeJSON()

@@ -72,6 +72,19 @@ class NFSe extends DocumentoFiscal implements DocumentForIssuance
         $issueOperation->setDocumentForIssuance($this);
         return $issueOperation->execute();
     }
+
+    /**
+     * Retorna o JSON que seria enviado na emissão, sem efetuar a chamada à API.
+     * Útil para depuração e validação do payload antes do envio.
+     * @return string JSON
+     */
+    public function inspecionarPayload() : string
+    {
+        $issueOperation = new Issue();
+        $issueOperation->setDocumentForIssuance($this);
+        $issueOperation->prepareJSON();
+        return $issueOperation->getContentToSend();
+    }
     
     /**
      * {@inheritDoc}
