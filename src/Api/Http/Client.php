@@ -23,7 +23,7 @@ class Client
         $url = Connection::getInstance()->getDomain() . $endpoint->getUrl();
         $request = new Request($endpoint->getMethod(), $url, $endpoint->getHeaders(), $operation->getContentToSend());
         try {
-            $response = (new GuzzleHttpClient())->sendAsync($request)->wait();
+            $response = (new GuzzleHttpClient(Connection::getInstance()->getTimeout()))->sendAsync($request)->wait();
         } catch (ClientException $ex) {
             $response = $ex->getResponse();
         }
